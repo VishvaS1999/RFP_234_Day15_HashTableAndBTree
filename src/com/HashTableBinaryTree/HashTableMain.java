@@ -97,11 +97,10 @@ public class HashTableMain
     public static void main(String[] args)
     {
         MyHashTable<String, Integer> hashTable = new MyHashTable();
-        String sentence = "To be or not to be";
+        String sentence = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
         String[] sentenceArray = sentence.toLowerCase().split(" ");
 
-        for (String word : sentenceArray)
-        {
+        for (String word : sentenceArray) {
             Integer count = hashTable.get(word);
 
             if (count == null)
